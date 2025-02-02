@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Folder Structure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>GitHub Folder Structure</h1>
+        <div id="input-container">
+            <input type="text" id="repo-url"
+                placeholder="Enter GitHub repository URL (e.g., https://github.com/user/repo)">
+            <button onclick="getStructure()">Get Structure</button>
+        </div>
+        <div class="structure-container">
+            <div id="structure"></div>
+            <button class="copy-btn" onclick="copyStructure()" title="Copy to clipboard">
+                <i class="fas fa-copy"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
